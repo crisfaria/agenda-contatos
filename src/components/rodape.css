@@ -1,0 +1,10 @@
+footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background-color: rgb(43, 226, 156);
+  color: whitesmoke;
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+}

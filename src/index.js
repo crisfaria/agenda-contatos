@@ -6,6 +6,7 @@ import Contatos from "./pages/Contatos";
 import NovoContato from "./pages/NovoContato";
 import EditarContato from "./pages/EditarContato";
 import DeletarContato from "./pages/DeletarContato";
+import { ContatosContextProvider } from "./context/ContatosContext";
 
 const router = createBrowserRouter([
   {
@@ -17,11 +18,11 @@ const router = createBrowserRouter([
     element: <NovoContato />,
   },
   {
-    path: "/editar-contato",
+    path: "/editar-contato/:userId",
     element: <EditarContato />,
   },
   {
-    path: "/deletar-contato",
+    path: "/deletar-contato/:userId",
     element: <DeletarContato />,
   },
 ]);
@@ -29,6 +30,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ContatosContextProvider>
+      <RouterProvider router={router} />
+    </ContatosContextProvider>
   </React.StrictMode>
 );

@@ -7,6 +7,7 @@
   border-radius: 12px;
   background: rgb(3, 117, 79);
   box-shadow: 0 0 5px 5px rgba(235, 231, 231, 0.3);
+  cursor: pointer;
 }
 .botaoDeIcone {
   padding: 0;

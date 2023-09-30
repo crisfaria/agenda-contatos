@@ -6,20 +6,20 @@ const Contato = (props) => {
   return (
     <div className="contato">
       <div>
-        <div>Nome:</div>
-        <div>Endereço:</div>
-        <div>Email:</div>
-        <div>Telefone:</div>
+        <div>Nome: {props.nome}</div>
+        <div>Endereço: {props.endereco}</div>
+        <div>Email: {props.email}</div>
+        <div>Telefone: {props.telefone}</div>
       </div>
       {props.comIcones && (
         <div>
           <div>
-            <Link to={"/editar-contato"}>
+            <Link to={`/editar-contato/${props.id}`}>
               <Botao icone="edit" />
             </Link>
           </div>
           <div>
-            <Link to={"/deletar-contato"}>
+            <Link to={`/deletar-contato/${props.id}`}>
               <Botao icone="delete" />
             </Link>
           </div>

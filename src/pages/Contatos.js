@@ -1,7 +1,8 @@
-import Cabecalho from "./components/cabecalho";
-import Rodape from "./components/rodape";
-import Botao from "./components/botao";
-import Contato from "./components/contato";
+import Cabecalho from "../components/cabecalho";
+import Rodape from "../components/rodape";
+import Botao from "../components/botao";
+import Contato from "../components/contato";
+import { Link } from "react-router-dom";
 
 function Contatos() {
   return (
@@ -22,7 +23,9 @@ function Contatos() {
         <Contato comIcones={true} />
       </main>
       <Rodape>
-        <Botao titulo="Novo Contato" />
+        <Link to="/novo-contato">
+          <Botao titulo="Novo Contato" />
+        </Link>
       </Rodape>
     </div>
   );

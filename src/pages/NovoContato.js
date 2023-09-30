@@ -1,6 +1,7 @@
 import Cabecalho from "../components/cabecalho";
 import Rodape from "../components/rodape";
 import Botao from "../components/botao";
+import { Link } from "react-router-dom";
 
 function NovoContato() {
   return (
@@ -18,6 +19,9 @@ function NovoContato() {
       </main>
       <Rodape>
         <Botao titulo="Salvar" />
+        <Link to="/">
+          <Botao titulo="Cancelar" cor="vermelho" />
+        </Link>
       </Rodape>
     </div>
   );

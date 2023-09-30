@@ -1,5 +1,6 @@
 import Botao from "./botao";
 import "./contato.css";
+import { Link } from "react-router-dom";
 
 const Contato = (props) => {
   return (
@@ -13,10 +14,14 @@ const Contato = (props) => {
       {props.comIcones && (
         <div>
           <div>
-            <Botao icone="edit" />
+            <Link to={"/editar-contato"}>
+              <Botao icone="edit" />
+            </Link>
           </div>
           <div>
-            <Botao icone="delete" />
+            <Link to={"/deletar-contato"}>
+              <Botao icone="delete" />
+            </Link>
           </div>
         </div>
       )}

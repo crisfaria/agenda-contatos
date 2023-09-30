@@ -2,6 +2,7 @@ import Cabecalho from "../components/cabecalho";
 import Rodape from "../components/rodape";
 import Botao from "../components/botao";
 import Contato from "../components/contato";
+import { Link } from "react-router-dom";
 
 function DeletarContato() {
   return (
@@ -13,7 +14,9 @@ function DeletarContato() {
       </main>
       <Rodape>
         <Botao titulo="Deletar" cor="vermelho" />
-        <Botao titulo="Cancelar" />
+        <Link to="/">
+          <Botao titulo="Cancelar" />
+        </Link>
       </Rodape>
     </div>
   );

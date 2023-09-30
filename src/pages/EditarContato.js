@@ -1,6 +1,7 @@
 import Cabecalho from "../components/cabecalho";
 import Rodape from "../components/rodape";
 import Botao from "../components/botao";
+import { Link } from "react-router-dom";
 
 function EditarContato() {
   return (
@@ -18,7 +19,9 @@ function EditarContato() {
       </main>
       <Rodape>
         <Botao titulo="Salvar" />
-        <Botao titulo="Cancelar" cor="vermelho" />
+        <Link to="/">
+          <Botao titulo="Cancelar" cor="vermelho" />
+        </Link>
       </Rodape>
     </div>
   );

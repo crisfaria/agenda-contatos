@@ -25,3 +25,7 @@
   font-weight: bold;
   box-shadow: 0 0 5px 5px rgba(73, 72, 72, 0.253);
 }
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
